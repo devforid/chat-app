@@ -1,0 +1,17 @@
+G:\SELISE-TEST\chat\Chat\Repository\bin\Debug\netcoreapp2.1\Repository.deps.json
+G:\SELISE-TEST\chat\Chat\Repository\bin\Debug\netcoreapp2.1\Repository.dll
+G:\SELISE-TEST\chat\Chat\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CoreCompileInputs.cache
+G:\SELISE-TEST\chat\Chat\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfoInputs.cache
+G:\SELISE-TEST\chat\Chat\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfo.cs
+G:\SELISE-TEST\chat\Chat\Repository\bin\Debug\netcoreapp2.1\Repository.pdb
+G:\SELISE-TEST\chat\Chat\Repository\obj\Debug\netcoreapp2.1\Repository.dll
+G:\SELISE-TEST\chat\Chat\Repository\obj\Debug\netcoreapp2.1\Repository.pdb
+G:\SELISE-TEST\chat-app\Repository\bin\Debug\netcoreapp2.1\Repository.deps.json
+G:\SELISE-TEST\chat-app\Repository\bin\Debug\netcoreapp2.1\Repository.dll
+G:\SELISE-TEST\chat-app\Repository\bin\Debug\netcoreapp2.1\Repository.pdb
+G:\SELISE-TEST\chat-app\Repository\obj\Debug\netcoreapp2.1\Repository.csprojAssemblyReference.cache
+G:\SELISE-TEST\chat-app\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CoreCompileInputs.cache
+G:\SELISE-TEST\chat-app\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfoInputs.cache
+G:\SELISE-TEST\chat-app\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfo.cs
+G:\SELISE-TEST\chat-app\Repository\obj\Debug\netcoreapp2.1\Repository.dll
+G:\SELISE-TEST\chat-app\Repository\obj\Debug\netcoreapp2.1\Repository.pdb
