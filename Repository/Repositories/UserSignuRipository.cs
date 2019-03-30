@@ -53,5 +53,9 @@ namespace Repository.Repositories
         {
             return _db.GetCollection<Users>("Users").Find(u => u.isLoggedin == true).ToList();
         }
+        public Users GetUser(Users userInfo)
+        {
+            return _db.GetCollection<Users>("Users").Find(u => u.Username == userInfo.Username && u.Password == userInfo.Password).FirstOrDefault();
+        }
     }
 }

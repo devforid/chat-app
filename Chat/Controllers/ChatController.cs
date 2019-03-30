@@ -43,7 +43,12 @@ namespace Chat.Controllers
             var response = chatServices.getDownloadUrlAwsS3(downloadFile);
             return Ok(response);
         }
-        
-        
+
+        [HttpPost("downloadChatMessages")]
+        public async Task<IActionResult> downloadChatMessages(DownloadChatMessage downloadChatMessage)
+        {
+            var response = chatServices.downloadChatMessages(downloadChatMessage);
+            return Ok(response);
+        }
     }
 }

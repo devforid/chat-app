@@ -12,7 +12,9 @@
     <PackageReference Include="Amazon.S3" Version="0.12.8" />
     <PackageReference Include="AWSSDK.Core" Version="3.3.100.3" />
     <PackageReference Include="AWSSDK.S3" Version="3.3.101.1" />
+    <PackageReference Include="Json.Net" Version="1.0.16" />
     <PackageReference Include="MongoDB.Driver" Version="2.8.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
   </ItemGroup>
 
   <ItemGroup>

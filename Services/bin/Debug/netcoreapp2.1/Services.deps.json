@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "fdf0482673669fca4fd16055f17854f68958086c"
+    "signature": "b366c18134f7c9c9cba0481f2fcf0ba9d68da10d"
   },
   "compilationOptions": {},
   "targets": {
@@ -87,6 +87,14 @@
           }
         }
       },
+      "Json.Net/1.0.16": {
+        "runtime": {
+          "lib/netstandard2.0/Json.Net.dll": {
+            "assemblyVersion": "1.0.16.1",
+            "fileVersion": "1.0.16.1"
+          }
+        }
+      },
       "Microsoft.Win32.Primitives/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -156,6 +164,14 @@
           "lib/netstandard1.5/MongoDB.Driver.Core.dll": {
             "assemblyVersion": "2.8.0.0",
             "fileVersion": "2.8.0.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.1.22727"
           }
         }
       },
@@ -987,7 +1003,9 @@
           "AWSSDK.Core": "3.3.100.3",
           "AWSSDK.S3": "3.3.101.1",
           "Amazon.S3": "0.12.8",
+          "Json.Net": "1.0.16",
           "MongoDB.Driver": "2.8.0",
+          "Newtonsoft.Json": "12.0.1",
           "Shared": "1.0.0"
         },
         "runtime": {
@@ -1056,6 +1074,13 @@
       "path": "dnsclient/1.2.0",
       "hashPath": "dnsclient.1.2.0.nupkg.sha512"
     },
+    "Json.Net/1.0.16": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kFEw3EjjO1LN429+ltBm+bPGbG91VsDVRX0wPnq2KsAOYlwVVyRQTuDz3vE+wlVKu5SOSAQLsUxS5svnrkbPTQ==",
+      "path": "json.net/1.0.16",
+      "hashPath": "json.net.1.0.16.nupkg.sha512"
+    },
     "Microsoft.Win32.Primitives/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1090,6 +1115,13 @@
       "sha512": "sha512-i+jDZN7nOnTGeCWcPdqopUx8dqxEsL2zGRBLWXTji4w+95kH9hEAuXmyMF129YEbojZwZ0xJ0/KL8+5bO3fM3Q==",
       "path": "mongodb.driver.core/2.8.0",
       "hashPath": "mongodb.driver.core.2.8.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
+      "path": "newtonsoft.json/12.0.1",
+      "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "type": "package",

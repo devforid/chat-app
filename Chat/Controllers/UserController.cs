@@ -59,6 +59,15 @@ namespace Chat.Controllers
             return Ok(response);
         }
 
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] Users user)
+        {
+            var response = _userServices.LoginUser(user);
+            return Ok(response);
+        }
+
+
+
         //[HttpGet]
         [HttpPost("getloggedinusers")]
         public async Task<IActionResult> GetLoggedInUsers()

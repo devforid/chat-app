@@ -107,6 +107,29 @@ namespace Services.Services
             return modifieduserList;
         }
 
+        public UserResponse LoginUser(Users userInfo)
+        {
+            var hashPassword = ComputeSha256Hash(userInfo.Password);
+            var user = _userSignuRipository.GetUser(userInfo);
+            if (user != null)
+            {
+                user.isLoggedin = true;
+                _userSignuRipository.Update(user);
+                return new UserResponse()
+                {
+                    isSuccess = true,
+                    StatusCode = 0,
+                    Results = null
+                };
+            }
+            return new UserResponse()
+            {
+                isSuccess = false,
+                StatusCode = 1,
+                Results = "Wrong username or password"
+            };
+        }
+
 
         static dynamic modifiedUserInfo(Users user)
         {

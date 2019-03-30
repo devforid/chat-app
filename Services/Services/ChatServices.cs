@@ -5,6 +5,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+using System.IO;
 
 namespace Services.Services
 {
@@ -87,6 +89,60 @@ namespace Services.Services
             {
                 var ex = e;
                 return new DownloadFile();
+            }
+        }
+
+        public DownloadChatMessage downloadChatMessages(DownloadChatMessage downloadChatMessage)
+        {
+            try
+            {
+                Message message = new Message()
+                {
+                    CreatorId = downloadChatMessage.CreatorId
+                };
+
+                var messages = chatRepository.GetMessage(message);
+                var jsonMessages = JsonConvert.SerializeObject(messages);
+                var fileDirectory = "G:\\messages.txt";
+                using (StreamWriter file = File.CreateText(@fileDirectory))
+                {
+                    JsonSerializer serializer = new JsonSerializer();
+                    serializer.Serialize(file, jsonMessages);
+                }
+
+                PresignedUrl fileInfo = new PresignedUrl()
+                {
+                    FileId = Guid.NewGuid().ToString(),
+                    FileExtention = "txt"
+                };
+
+                var presignedUrl = chatRepository.GetPresignedUrl(fileInfo);
+                Task task = Task.Run(() => chatRepository.storePresignedUrl(presignedUrl));
+
+                UploadFileAWSS3 uploadFileAWSS3 = new UploadFileAWSS3()
+                {
+                    FilePath = fileDirectory,
+                    FileUrl = presignedUrl.Url
+                };
+                Task uploadTask = Task.Run(() => chatRepository.uploadFileInAwsS3(uploadFileAWSS3));
+
+                DownloadFile downloadFile = new DownloadFile()
+                {
+                    FileKey = presignedUrl.FileKey
+                };
+
+                var downloadFileInfo = chatRepository.getDownloadUrlAwsS3(downloadFile);
+                
+                return new DownloadChatMessage()
+                {
+                    CreatorId = downloadChatMessage.CreatorId,
+                    DownloadUrl = downloadFileInfo.DownloadUrl
+                };
+
+            }
+            catch(Exception e)
+            {
+                return new DownloadChatMessage();
             }
         }
     }
