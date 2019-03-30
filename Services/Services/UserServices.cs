@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Dynamic;
 using System.Security.Cryptography;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Services.Services
 {
@@ -17,13 +18,23 @@ namespace Services.Services
             _userSignuRipository = new UserSignuRipository();
         }
 
-        public dynamic Get(string id)
+        public async Task<dynamic> Get(string id)
         {
             var user = _userSignuRipository.Get(id);
             return modifiedUserInfo(user);
-        } 
-        public SignupResponse InsertUser(Users user)
+        }
+        public async Task<SignupResponse>  InsertUser(Users user)
         {
+            var existinguser = _userSignuRipository.Get(user.Id);
+            if (existinguser != null)
+            {
+                return new SignupResponse()
+                {
+                    isSignupSuccess = false,
+                    Username = user.Username
+                };
+            }
+
             string hashedPassword = ComputeSha256Hash(user.Password);
             user.Password = hashedPassword;
             user.isLoggedin = true;
@@ -95,6 +106,7 @@ namespace Services.Services
             }
             return modifieduserList;
         }
+
 
         static dynamic modifiedUserInfo(Users user)
         {

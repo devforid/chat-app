@@ -1,5 +1,6 @@
 ﻿using MongoDB.Driver;
 using Repository.Models;
+using Shared.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Text;

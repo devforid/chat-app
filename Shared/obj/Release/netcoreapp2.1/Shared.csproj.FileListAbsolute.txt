@@ -1,0 +1,8 @@
+G:\SELISE-TEST\chat-app\Shared\bin\Release\netcoreapp2.1\Shared.deps.json
+G:\SELISE-TEST\chat-app\Shared\bin\Release\netcoreapp2.1\Shared.dll
+G:\SELISE-TEST\chat-app\Shared\bin\Release\netcoreapp2.1\Shared.pdb
+G:\SELISE-TEST\chat-app\Shared\obj\Release\netcoreapp2.1\Shared.csproj.CoreCompileInputs.cache
+G:\SELISE-TEST\chat-app\Shared\obj\Release\netcoreapp2.1\Shared.AssemblyInfoInputs.cache
+G:\SELISE-TEST\chat-app\Shared\obj\Release\netcoreapp2.1\Shared.AssemblyInfo.cs
+G:\SELISE-TEST\chat-app\Shared\obj\Release\netcoreapp2.1\Shared.dll
+G:\SELISE-TEST\chat-app\Shared\obj\Release\netcoreapp2.1\Shared.pdb

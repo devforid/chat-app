@@ -14,78 +14,84 @@ namespace Chat.Controllers
     [Route("api/[controller]")]
     [ApiController]
 
-    public class SignupController : ControllerBase
+    public class UserController : ControllerBase
     {
 
         UserServices _userServices = new UserServices();
+        ChatServices chatServices = new ChatServices();
 
-        [HttpGet("{id}")]
-        public UserResponse Get(string id)
+        //[HttpGet("{id}")]
+        [HttpPost("getuserbyid")]
+        public async Task<IActionResult> GetUserById(GetUser getUser)
         {
             try
             {
-                var user = _userServices.Get(id);
+                var user = await _userServices.Get(getUser.Id);
                 if(user == null)
                 {
-                    return new UserResponse()
+                    return Ok(new UserResponse()
                     {
                         StatusCode = 1,
                         isSuccess = false,
-                    };
+                    });
                 }
-                return new UserResponse()
+                return Ok(new UserResponse()
                 {
                     StatusCode = 0,
                     isSuccess = true,
                     Results =  user
-                };
+                });
             }
             catch
             {
-                return new UserResponse()
+                return Ok(new UserResponse()
                 {
                     StatusCode = 1,
                     isSuccess = false,
-                };
+                });
             }
         }
-        [HttpPost]
-        public SignupResponse Insert(Users user)
+        //[HttpPost]
+        [HttpPost("Signup")]
+        public async Task<IActionResult>  Insert([FromBody] Users user)
         {
-            return _userServices.InsertUser(user);
+            var response = await _userServices.InsertUser(user);
+            return Ok(response);
         }
 
-        [HttpGet]
-        public UserResponse Get()
+        //[HttpGet]
+        [HttpPost("getloggedinusers")]
+        public async Task<IActionResult> GetLoggedInUsers()
         {
             try
             {
                 var users = _userServices.GetLoggedInUsers();
                 if (users != null)
                 {
-                    return new UserResponse()
+                    return Ok( new UserResponse()
                     {
                         StatusCode = 0,
                         Results = users,
                         isSuccess = true
-                    };
+                    });
                 }
-                return new UserResponse()
+                return Ok( new UserResponse()
                 {
                     StatusCode = 1,
                     isSuccess = false,
-                };
+                });
             }
             catch
             {
-                return new UserResponse()
+                return Ok( new UserResponse()
                 {
                     StatusCode = 1,
                     isSuccess = false,
-                };
+                });
             }
 
         }
+
 
         //[HttpPost]
         //public SignupResponse Update(Users user)

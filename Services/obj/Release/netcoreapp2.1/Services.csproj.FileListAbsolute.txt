@@ -1,0 +1,14 @@
+G:\SELISE-TEST\chat-app\Services\bin\Release\netcoreapp2.1\Services.deps.json
+G:\SELISE-TEST\chat-app\Services\bin\Release\netcoreapp2.1\Services.dll
+G:\SELISE-TEST\chat-app\Services\bin\Release\netcoreapp2.1\Services.pdb
+G:\SELISE-TEST\chat-app\Services\bin\Release\netcoreapp2.1\Repository.dll
+G:\SELISE-TEST\chat-app\Services\bin\Release\netcoreapp2.1\Shared.dll
+G:\SELISE-TEST\chat-app\Services\bin\Release\netcoreapp2.1\Repository.pdb
+G:\SELISE-TEST\chat-app\Services\bin\Release\netcoreapp2.1\Shared.pdb
+G:\SELISE-TEST\chat-app\Services\obj\Release\netcoreapp2.1\Services.csprojAssemblyReference.cache
+G:\SELISE-TEST\chat-app\Services\obj\Release\netcoreapp2.1\Services.csproj.CoreCompileInputs.cache
+G:\SELISE-TEST\chat-app\Services\obj\Release\netcoreapp2.1\Services.AssemblyInfoInputs.cache
+G:\SELISE-TEST\chat-app\Services\obj\Release\netcoreapp2.1\Services.AssemblyInfo.cs
+G:\SELISE-TEST\chat-app\Services\obj\Release\netcoreapp2.1\Services.csproj.CopyComplete
+G:\SELISE-TEST\chat-app\Services\obj\Release\netcoreapp2.1\Services.dll
+G:\SELISE-TEST\chat-app\Services\obj\Release\netcoreapp2.1\Services.pdb

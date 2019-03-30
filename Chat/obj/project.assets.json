@@ -2,6 +2,73 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "Amazon.Core/0.12.2": {
+        "type": "package",
+        "dependencies": {
+          "Carbon.Json": "1.9.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Amazon.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Amazon.Core.dll": {}
+        }
+      },
+      "Amazon.S3/0.12.8": {
+        "type": "package",
+        "dependencies": {
+          "Amazon.Core": "0.12.2",
+          "Carbon.Storage": "1.17.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Amazon.S3.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Amazon.S3.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.3.100.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/AWSSDK.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.S3/3.3.101.1": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.100.3, 3.4.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/AWSSDK.S3.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.S3.dll": {}
+        }
+      },
+      "Carbon.Json/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Encodings.Web": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Carbon.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Carbon.Json.dll": {}
+        }
+      },
+      "Carbon.Storage/1.17.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.1/Carbon.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Carbon.Storage.dll": {}
+        }
+      },
       "DnsClient/1.2.0": {
         "type": "package",
         "dependencies": {
@@ -4960,24 +5027,28 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "Repository/1.0.0": {
+      "Repository.User/1.0.1": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "MongoDB.Driver": "2.8.0"
+          "AWSSDK.Core": "3.3.100.3",
+          "AWSSDK.S3": "3.3.101.1",
+          "Amazon.S3": "0.12.8",
+          "MongoDB.Driver": "2.8.0",
+          "Shared": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Repository.dll": {}
+          "bin/placeholder/Repository.User.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Repository.dll": {}
+          "bin/placeholder/Repository.User.dll": {}
         }
       },
       "Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "Repository": "1.0.0",
+          "Repository.User": "1.0.1",
           "Shared": "1.0.0"
         },
         "compile": {
@@ -5000,6 +5071,144 @@
     }
   },
   "libraries": {
+    "Amazon.Core/0.12.2": {
+      "sha512": "w78hy0fYci1niK/SKWh3NV5vfnxDQjr6vCdFVRALYwSznLZDAmjxvRuPjI2uL3sry7K0Ucd4NM4LEin6urAZJA==",
+      "type": "package",
+      "path": "amazon.core/0.12.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "amazon.core.0.12.2.nupkg.sha512",
+        "amazon.core.nuspec",
+        "lib/netstandard2.0/Amazon.Core.dll"
+      ]
+    },
+    "Amazon.S3/0.12.8": {
+      "sha512": "OogdMya0GdOR05JZMpZHCkIlL/fwCaPgNqrDfYPcHlBR5LqOyo+qdEv+hL/iNQ2NCzqYyX9vqcb1dfuGyNwCSQ==",
+      "type": "package",
+      "path": "amazon.s3/0.12.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "amazon.s3.0.12.8.nupkg.sha512",
+        "amazon.s3.nuspec",
+        "lib/netstandard2.0/Amazon.S3.dll"
+      ]
+    },
+    "AWSSDK.Core/3.3.100.3": {
+      "sha512": "TttzG9oQVBLNPB4jp2JO5hXo2JZpj9kEvkJh7gqvLFi99qXSenLg61WVred9NDLs6yeXiRYe8/FhuUIh5wRAIw==",
+      "type": "package",
+      "path": "awssdk.core/3.3.100.3",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "awssdk.core.3.3.100.3.nupkg.sha512",
+        "awssdk.core.nuspec",
+        "lib/MonoAndroid10/AWSSDK.Core.XML",
+        "lib/MonoAndroid10/AWSSDK.Core.dll",
+        "lib/MonoAndroid10/AWSSDK.Core.pdb",
+        "lib/MonoTouch10/AWSSDK.Core.XML",
+        "lib/MonoTouch10/AWSSDK.Core.dll",
+        "lib/Xamarin.Mac20/AWSSDK.Core.XML",
+        "lib/Xamarin.Mac20/AWSSDK.Core.dll",
+        "lib/Xamarin.iOS10/AWSSDK.Core.XML",
+        "lib/Xamarin.iOS10/AWSSDK.Core.dll",
+        "lib/net35/AWSSDK.Core.dll",
+        "lib/net35/AWSSDK.Core.pdb",
+        "lib/net35/AWSSDK.Core.xml",
+        "lib/net45/AWSSDK.Core.dll",
+        "lib/net45/AWSSDK.Core.pdb",
+        "lib/net45/AWSSDK.Core.xml",
+        "lib/netstandard1.3/AWSSDK.Core.dll",
+        "lib/netstandard1.3/AWSSDK.Core.pdb",
+        "lib/netstandard1.3/AWSSDK.Core.xml",
+        "lib/netstandard2.0/AWSSDK.Core.dll",
+        "lib/netstandard2.0/AWSSDK.Core.pdb",
+        "lib/netstandard2.0/AWSSDK.Core.xml",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.XML",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.dll",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.pdb",
+        "lib/uap/AWSSDK.Core.XML",
+        "lib/uap/AWSSDK.Core.dll",
+        "lib/uap/AWSSDK.Core.pdb",
+        "lib/win8/AWSSDK.Core.XML",
+        "lib/win8/AWSSDK.Core.dll",
+        "lib/win8/AWSSDK.Core.pdb",
+        "lib/wp8/AWSSDK.Core.XML",
+        "lib/wp8/AWSSDK.Core.dll",
+        "lib/wp8/AWSSDK.Core.pdb",
+        "lib/wpa81/AWSSDK.Core.XML",
+        "lib/wpa81/AWSSDK.Core.dll",
+        "lib/wpa81/AWSSDK.Core.pdb",
+        "tools/account-management.ps1"
+      ]
+    },
+    "AWSSDK.S3/3.3.101.1": {
+      "sha512": "vp2BRsc/alkx8t+55JQ/E6d12peFlXQ8yxYzbz4MNpuVk1sUO14dSeSfVf0cH7ZA7PXetW0RBNVeId+A9XpVYA==",
+      "type": "package",
+      "path": "awssdk.s3/3.3.101.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AWSSDK.S3.CodeAnalysis.dll",
+        "awssdk.s3.3.3.101.1.nupkg.sha512",
+        "awssdk.s3.nuspec",
+        "lib/MonoAndroid10/AWSSDK.S3.XML",
+        "lib/MonoAndroid10/AWSSDK.S3.dll",
+        "lib/MonoTouch10/AWSSDK.S3.XML",
+        "lib/MonoTouch10/AWSSDK.S3.dll",
+        "lib/MonoTouch10/AWSSDK.S3.pdb",
+        "lib/Xamarin.iOS10/AWSSDK.S3.XML",
+        "lib/Xamarin.iOS10/AWSSDK.S3.dll",
+        "lib/net35/AWSSDK.S3.dll",
+        "lib/net35/AWSSDK.S3.pdb",
+        "lib/net35/AWSSDK.S3.xml",
+        "lib/net45/AWSSDK.S3.dll",
+        "lib/net45/AWSSDK.S3.pdb",
+        "lib/net45/AWSSDK.S3.xml",
+        "lib/netstandard1.3/AWSSDK.S3.dll",
+        "lib/netstandard1.3/AWSSDK.S3.pdb",
+        "lib/netstandard1.3/AWSSDK.S3.xml",
+        "lib/netstandard2.0/AWSSDK.S3.dll",
+        "lib/netstandard2.0/AWSSDK.S3.pdb",
+        "lib/netstandard2.0/AWSSDK.S3.xml",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.S3.XML",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.S3.dll",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.S3.pdb",
+        "lib/uap/AWSSDK.S3.XML",
+        "lib/uap/AWSSDK.S3.dll",
+        "lib/uap/AWSSDK.S3.pdb",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "Carbon.Json/1.9.0": {
+      "sha512": "DUkE1HfPwDpXI+7KsemHHK+EhtS08llue3SQDkVZkzCmX8SJiMv1vpHi5p7HbjkDZfb28J+aPsNOlBRE016RYA==",
+      "type": "package",
+      "path": "carbon.json/1.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "carbon.json.1.9.0.nupkg.sha512",
+        "carbon.json.nuspec",
+        "lib/netstandard2.0/Carbon.Json.dll"
+      ]
+    },
+    "Carbon.Storage/1.17.0": {
+      "sha512": "LCfJIoCfLHPPp44VWlPTIVHaehTKeFFeUaG5eyvyxCOApsRPattOM/rV4hSdtu7aGLb3QEG/2fGZ46wUOVfGeQ==",
+      "type": "package",
+      "path": "carbon.storage/1.17.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "carbon.storage.1.17.0.nupkg.sha512",
+        "carbon.storage.nuspec",
+        "lib/netcoreapp2.1/Carbon.Storage.dll",
+        "lib/netstandard2.0/Carbon.Storage.dll"
+      ]
+    },
     "DnsClient/1.2.0": {
       "sha512": "P34wUkeqU4FoQiOMV8OjpdeDZKs4d3r+VlHuKJ6eO5feiZgna3+9MF5orHRUn3DAv1g/HPE5hlkGucmxmsFfBw==",
       "type": "package",
@@ -13471,7 +13680,7 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "Repository/1.0.0": {
+    "Repository.User/1.0.1": {
       "type": "project",
       "path": "../Repository/Repository.csproj",
       "msbuildProject": "../Repository/Repository.csproj"
