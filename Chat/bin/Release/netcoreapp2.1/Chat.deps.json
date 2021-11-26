@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "d12b4ccbfe3375b2f0c5fe8b39535d41e5f1bfab"
+    "signature": "9166a2d5e1042646a0ff0a54a2c2cc60f918132e"
   },
   "compilationOptions": {
     "defines": [
@@ -29,13 +29,92 @@
           "Microsoft.NETCore.App": "2.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1",
           "Services": "1.0.0",
-          "Shared": "1.0.0"
+          "Shared-Dto": "1.0.4"
         },
         "runtime": {
           "Chat.dll": {}
         },
         "compile": {
           "Chat.dll": {}
+        }
+      },
+      "Amazon.Core/0.12.2": {
+        "dependencies": {
+          "Carbon.Json": "1.9.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Amazon.Core.dll": {
+            "assemblyVersion": "0.12.2.0",
+            "fileVersion": "0.12.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Amazon.Core.dll": {}
+        }
+      },
+      "Amazon.S3/0.12.8": {
+        "dependencies": {
+          "Amazon.Core": "0.12.2",
+          "Carbon.Storage": "1.17.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Amazon.S3.dll": {
+            "assemblyVersion": "0.12.8.0",
+            "fileVersion": "0.12.8.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Amazon.S3.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.3.100.3": {
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.100.3"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.S3/3.3.101.1": {
+        "dependencies": {
+          "AWSSDK.Core": "3.3.100.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.S3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.101.1"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AWSSDK.S3.dll": {}
+        }
+      },
+      "Carbon.Json/1.9.0": {
+        "dependencies": {
+          "System.Text.Encodings.Web": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Carbon.Json.dll": {
+            "assemblyVersion": "1.9.0.0",
+            "fileVersion": "1.9.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Carbon.Json.dll": {}
+        }
+      },
+      "Carbon.Storage/1.17.0": {
+        "runtime": {
+          "lib/netcoreapp2.1/Carbon.Storage.dll": {
+            "assemblyVersion": "1.17.0.0",
+            "fileVersion": "1.17.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.1/Carbon.Storage.dll": {}
         }
       },
       "DnsClient/1.2.0": {
@@ -50,6 +129,17 @@
         },
         "compile": {
           "lib/netstandard2.0/DnsClient.dll": {}
+        }
+      },
+      "Json.Net/1.0.16": {
+        "runtime": {
+          "lib/netstandard2.0/Json.Net.dll": {
+            "assemblyVersion": "1.0.16.1",
+            "fileVersion": "1.0.16.1"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Json.Net.dll": {}
         }
       },
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
@@ -271,7 +361,7 @@
       },
       "Microsoft.VisualStudio.Web.CodeGeneration.Contracts/2.1.1": {
         "dependencies": {
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll": {
@@ -287,7 +377,7 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "2.1.1",
           "Microsoft.VisualStudio.Web.CodeGeneration.Templating": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll": {
@@ -347,7 +437,7 @@
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "2.8.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Contracts": "2.1.1",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.1",
           "NuGet.Frameworks": "4.7.0"
         },
         "runtime": {
@@ -444,6 +534,17 @@
           "Microsoft.NETCore.Platforms": "2.1.0"
         }
       },
+      "Newtonsoft.Json/12.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.1.22727"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "NuGet.Frameworks/4.7.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.3"
@@ -456,6 +557,26 @@
         },
         "compile": {
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
+        }
+      },
+      "Repository.User/1.0.4": {
+        "dependencies": {
+          "AWSSDK.Core": "3.3.100.3",
+          "AWSSDK.S3": "3.3.101.1",
+          "Amazon.S3": "0.12.8",
+          "Json.Net": "1.0.16",
+          "MongoDB.Driver": "2.8.0",
+          "Newtonsoft.Json": "12.0.1",
+          "Shared-Dto": "1.0.4"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Repository.dll": {
+            "assemblyVersion": "1.0.4.0",
+            "fileVersion": "1.0.4.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.1/Repository.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
@@ -556,6 +677,17 @@
             "rid": "ubuntu.16.10-x64",
             "assetType": "native"
           }
+        }
+      },
+      "Shared-Dto/1.0.4": {
+        "runtime": {
+          "lib/netcoreapp2.1/Shared.dll": {
+            "assemblyVersion": "1.0.4.0",
+            "fileVersion": "1.0.4.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.1/Shared.dll": {}
         }
       },
       "System.ComponentModel/4.0.1": {
@@ -896,40 +1028,21 @@
           "System.Runtime.Handles": "4.3.0"
         }
       },
-      "Repository.User/1.0.1": {
-        "dependencies": {
-          "MongoDB.Driver": "2.8.0"
-        },
-        "runtime": {
-          "Repository.dll": {}
-        },
-        "compile": {
-          "Repository.dll": {}
-        }
-      },
       "Services/1.0.0": {
         "dependencies": {
-          "Repository.User": "1.0.1",
-          "Shared": "1.0.0"
+          "Repository.User": "1.0.4",
+          "Shared-Dto": "1.0.4"
         },
         "runtime": {
           "Services.dll": {}
         },
         "compile": {
           "Services.dll": {}
-        }
-      },
-      "Shared/1.0.0": {
-        "runtime": {
-          "Shared.dll": {}
-        },
-        "compile": {
-          "Shared.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "dependencies": {
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.1",
           "Newtonsoft.Json.Bson": "1.0.1"
         },
         "compile": {
@@ -1209,7 +1322,7 @@
       "Microsoft.AspNetCore.Authentication.OAuth/2.1.1": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.OAuth.dll": {}
@@ -1475,7 +1588,7 @@
           "Microsoft.AspNetCore.Http.Connections.Common": "1.0.1",
           "Microsoft.AspNetCore.Routing": "2.1.1",
           "Microsoft.AspNetCore.WebSockets": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "compile": {
           "lib/netcoreapp2.1/Microsoft.AspNetCore.Http.Connections.dll": {}
@@ -1485,7 +1598,7 @@
       "Microsoft.AspNetCore.Http.Connections.Common/1.0.1": {
         "dependencies": {
           "Microsoft.AspNetCore.Connections.Abstractions": "2.1.1",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.1",
           "System.Buffers": "4.5.0"
         },
         "compile": {
@@ -1578,7 +1691,7 @@
       "Microsoft.AspNetCore.JsonPatch/2.1.1": {
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {}
@@ -1809,7 +1922,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.1.1",
           "Microsoft.Extensions.Logging.Console": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.NodeServices.dll": {}
@@ -2041,7 +2154,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Connections.Abstractions": "2.1.1",
           "Microsoft.Extensions.Options": "2.1.1",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.1",
           "System.Buffers": "4.5.0"
         },
         "compile": {
@@ -2067,7 +2180,7 @@
       "Microsoft.AspNetCore.SignalR.Protocols.Json/1.0.1": {
         "dependencies": {
           "Microsoft.AspNetCore.SignalR.Common": "1.0.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {}
@@ -2391,7 +2504,7 @@
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.1.1",
           "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {}
@@ -2446,7 +2559,7 @@
       "Microsoft.Extensions.DependencyModel/2.1.0": {
         "dependencies": {
           "Microsoft.DotNet.PlatformAbstractions": "2.1.0",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.1",
           "System.Diagnostics.Debug": "4.3.0",
           "System.Dynamic.Runtime": "4.3.0",
           "System.Linq": "4.3.0"
@@ -2636,7 +2749,7 @@
       "Microsoft.Extensions.Logging.EventSource/2.1.1": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.EventSource.dll": {}
@@ -2732,7 +2845,7 @@
         "dependencies": {
           "Microsoft.IdentityModel.Protocols": "5.2.0",
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.1",
           "System.Dynamic.Runtime": "4.3.0",
           "System.IdentityModel.Tokens.Jwt": "5.2.0"
         },
@@ -2758,7 +2871,7 @@
         "dependencies": {
           "Microsoft.IdentityModel.Logging": "5.2.0",
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.1",
           "System.Collections": "4.3.0",
           "System.Diagnostics.Tools": "4.3.0",
           "System.Runtime": "4.3.0",
@@ -2818,16 +2931,10 @@
         },
         "compileOnly": true
       },
-      "Newtonsoft.Json/11.0.2": {
-        "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        },
-        "compileOnly": true
-      },
       "Newtonsoft.Json.Bson/1.0.1": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "compile": {
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
@@ -3090,7 +3197,7 @@
         "dependencies": {
           "Microsoft.IdentityModel.Tokens": "5.2.0",
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "compile": {
           "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll": {}
@@ -3830,12 +3937,61 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Amazon.Core/0.12.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w78hy0fYci1niK/SKWh3NV5vfnxDQjr6vCdFVRALYwSznLZDAmjxvRuPjI2uL3sry7K0Ucd4NM4LEin6urAZJA==",
+      "path": "amazon.core/0.12.2",
+      "hashPath": "amazon.core.0.12.2.nupkg.sha512"
+    },
+    "Amazon.S3/0.12.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OogdMya0GdOR05JZMpZHCkIlL/fwCaPgNqrDfYPcHlBR5LqOyo+qdEv+hL/iNQ2NCzqYyX9vqcb1dfuGyNwCSQ==",
+      "path": "amazon.s3/0.12.8",
+      "hashPath": "amazon.s3.0.12.8.nupkg.sha512"
+    },
+    "AWSSDK.Core/3.3.100.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TttzG9oQVBLNPB4jp2JO5hXo2JZpj9kEvkJh7gqvLFi99qXSenLg61WVred9NDLs6yeXiRYe8/FhuUIh5wRAIw==",
+      "path": "awssdk.core/3.3.100.3",
+      "hashPath": "awssdk.core.3.3.100.3.nupkg.sha512"
+    },
+    "AWSSDK.S3/3.3.101.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vp2BRsc/alkx8t+55JQ/E6d12peFlXQ8yxYzbz4MNpuVk1sUO14dSeSfVf0cH7ZA7PXetW0RBNVeId+A9XpVYA==",
+      "path": "awssdk.s3/3.3.101.1",
+      "hashPath": "awssdk.s3.3.3.101.1.nupkg.sha512"
+    },
+    "Carbon.Json/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DUkE1HfPwDpXI+7KsemHHK+EhtS08llue3SQDkVZkzCmX8SJiMv1vpHi5p7HbjkDZfb28J+aPsNOlBRE016RYA==",
+      "path": "carbon.json/1.9.0",
+      "hashPath": "carbon.json.1.9.0.nupkg.sha512"
+    },
+    "Carbon.Storage/1.17.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LCfJIoCfLHPPp44VWlPTIVHaehTKeFFeUaG5eyvyxCOApsRPattOM/rV4hSdtu7aGLb3QEG/2fGZ46wUOVfGeQ==",
+      "path": "carbon.storage/1.17.0",
+      "hashPath": "carbon.storage.1.17.0.nupkg.sha512"
+    },
     "DnsClient/1.2.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-P34wUkeqU4FoQiOMV8OjpdeDZKs4d3r+VlHuKJ6eO5feiZgna3+9MF5orHRUn3DAv1g/HPE5hlkGucmxmsFfBw==",
       "path": "dnsclient/1.2.0",
       "hashPath": "dnsclient.1.2.0.nupkg.sha512"
+    },
+    "Json.Net/1.0.16": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kFEw3EjjO1LN429+ltBm+bPGbG91VsDVRX0wPnq2KsAOYlwVVyRQTuDz3vE+wlVKu5SOSAQLsUxS5svnrkbPTQ==",
+      "path": "json.net/1.0.16",
+      "hashPath": "json.net.1.0.16.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
       "type": "package",
@@ -3991,12 +4147,26 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
+    "Newtonsoft.Json/12.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
+      "path": "newtonsoft.json/12.0.1",
+      "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
+    },
     "NuGet.Frameworks/4.7.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-KuqDbPzjOWbUM6gPMbkvdhlQ10roQAoMM7mNZ8hcY/fH+9J4Zc+qT8dLWoNzGyr0OrxQVdZdbSjy/fxwoICgGg==",
       "path": "nuget.frameworks/4.7.0",
       "hashPath": "nuget.frameworks.4.7.0.nupkg.sha512"
+    },
+    "Repository.User/1.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Cy+dORA9KzA6TcwysbPZIUlrFWzimjSoDk2Q63p7a7oU/wT2MpjMnRt2sa4qNQtL+rPjFDmCYyj51toDuidOQA==",
+      "path": "repository.user/1.0.4",
+      "hashPath": "repository.user.1.0.4.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "type": "package",
@@ -4081,6 +4251,13 @@
       "sha512": "sha512-leXiwfiIkW7Gmn7cgnNcdtNAU70SjmKW3jxGj1iKHOvdn0zRWsgv/l2OJUO5zdGdiv2VRFnAsxxhDgMzofPdWg==",
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
+    },
+    "Shared-Dto/1.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Gw5XeMA3ygkh1BvuS0rppA480kgDpj2EPgnpbrAw+CkNRD4ssYX/zLfotbwCvxa9K6jKeNBDckVDjak01DMp5g==",
+      "path": "shared-dto/1.0.4",
+      "hashPath": "shared-dto.1.0.4.nupkg.sha512"
     },
     "System.ComponentModel/4.0.1": {
       "type": "package",
@@ -4201,17 +4378,7 @@
       "path": "system.threading.threadpool/4.3.0",
       "hashPath": "system.threading.threadpool.4.3.0.nupkg.sha512"
     },
-    "Repository.User/1.0.1": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Services/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -5321,13 +5488,6 @@
       "sha512": "sha512-vduxuHEqRgRrTE8wYG8Wxj/+6wwzddOmZzjKZx6rFMc/91aUBxI5etAFYxesoNaIja5NpgSTcnk6cN8BeYXf9A==",
       "path": "microsoft.win32.registry/4.5.0",
       "hashPath": "microsoft.win32.registry.4.5.0.nupkg.sha512"
-    },
-    "Newtonsoft.Json/11.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-znZGbws7E4BA9jxNZ7FuiIRI3C9hrgatVQSTKhIYZYNOud4M5VfGlTYi6RdYO5sQrebFuF/g9UEV3hOxDMXF6Q==",
-      "path": "newtonsoft.json/11.0.2",
-      "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
     },
     "Newtonsoft.Json.Bson/1.0.1": {
       "type": "package",

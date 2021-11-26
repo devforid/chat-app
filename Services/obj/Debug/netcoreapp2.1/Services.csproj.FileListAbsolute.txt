@@ -26,3 +26,20 @@ G:\SELISE-TEST\chat-app\Services\obj\Debug\netcoreapp2.1\Services.AssemblyInfo.c
 G:\SELISE-TEST\chat-app\Services\obj\Debug\netcoreapp2.1\Services.csproj.CopyComplete
 G:\SELISE-TEST\chat-app\Services\obj\Debug\netcoreapp2.1\Services.dll
 G:\SELISE-TEST\chat-app\Services\obj\Debug\netcoreapp2.1\Services.pdb
+G:\SELISE-TEST-PACKAGE\chat-app\Services\bin\Debug\netcoreapp2.1\Services.deps.json
+G:\SELISE-TEST-PACKAGE\chat-app\Services\bin\Debug\netcoreapp2.1\Services.dll
+G:\SELISE-TEST-PACKAGE\chat-app\Services\bin\Debug\netcoreapp2.1\Services.pdb
+G:\SELISE-TEST-PACKAGE\chat-app\Services\obj\Debug\netcoreapp2.1\Services.csproj.CoreCompileInputs.cache
+G:\SELISE-TEST-PACKAGE\chat-app\Services\obj\Debug\netcoreapp2.1\Services.AssemblyInfoInputs.cache
+G:\SELISE-TEST-PACKAGE\chat-app\Services\obj\Debug\netcoreapp2.1\Services.AssemblyInfo.cs
+G:\SELISE-TEST-PACKAGE\chat-app\Services\obj\Debug\netcoreapp2.1\Services.dll
+G:\SELISE-TEST-PACKAGE\chat-app\Services\obj\Debug\netcoreapp2.1\Services.pdb
+D:\Documents\Office doc\SELISE-TEST-PACKAGE\chat-app\Services\bin\Debug\netcoreapp2.1\Services.deps.json
+D:\Documents\Office doc\SELISE-TEST-PACKAGE\chat-app\Services\bin\Debug\netcoreapp2.1\Services.dll
+D:\Documents\Office doc\SELISE-TEST-PACKAGE\chat-app\Services\bin\Debug\netcoreapp2.1\Services.pdb
+D:\Documents\Office doc\SELISE-TEST-PACKAGE\chat-app\Services\obj\Debug\netcoreapp2.1\Services.csproj.AssemblyReference.cache
+D:\Documents\Office doc\SELISE-TEST-PACKAGE\chat-app\Services\obj\Debug\netcoreapp2.1\Services.AssemblyInfoInputs.cache
+D:\Documents\Office doc\SELISE-TEST-PACKAGE\chat-app\Services\obj\Debug\netcoreapp2.1\Services.AssemblyInfo.cs
+D:\Documents\Office doc\SELISE-TEST-PACKAGE\chat-app\Services\obj\Debug\netcoreapp2.1\Services.csproj.CoreCompileInputs.cache
+D:\Documents\Office doc\SELISE-TEST-PACKAGE\chat-app\Services\obj\Debug\netcoreapp2.1\Services.dll
+D:\Documents\Office doc\SELISE-TEST-PACKAGE\chat-app\Services\obj\Debug\netcoreapp2.1\Services.pdb

@@ -12,3 +12,11 @@ G:\SELISE-TEST\chat-app\Services\obj\Release\netcoreapp2.1\Services.AssemblyInfo
 G:\SELISE-TEST\chat-app\Services\obj\Release\netcoreapp2.1\Services.csproj.CopyComplete
 G:\SELISE-TEST\chat-app\Services\obj\Release\netcoreapp2.1\Services.dll
 G:\SELISE-TEST\chat-app\Services\obj\Release\netcoreapp2.1\Services.pdb
+G:\SELISE-TEST-PACKAGE\chat-app\Services\bin\Release\netcoreapp2.1\Services.deps.json
+G:\SELISE-TEST-PACKAGE\chat-app\Services\bin\Release\netcoreapp2.1\Services.dll
+G:\SELISE-TEST-PACKAGE\chat-app\Services\bin\Release\netcoreapp2.1\Services.pdb
+G:\SELISE-TEST-PACKAGE\chat-app\Services\obj\Release\netcoreapp2.1\Services.csproj.CoreCompileInputs.cache
+G:\SELISE-TEST-PACKAGE\chat-app\Services\obj\Release\netcoreapp2.1\Services.AssemblyInfoInputs.cache
+G:\SELISE-TEST-PACKAGE\chat-app\Services\obj\Release\netcoreapp2.1\Services.AssemblyInfo.cs
+G:\SELISE-TEST-PACKAGE\chat-app\Services\obj\Release\netcoreapp2.1\Services.dll
+G:\SELISE-TEST-PACKAGE\chat-app\Services\obj\Release\netcoreapp2.1\Services.pdb

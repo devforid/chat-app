@@ -1,12 +1,11 @@
-﻿using Repository.Models;
-using Repository.Repositories;
-using Shared.DTOs;
+﻿using Shared.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.IO;
+using Repository.Repositories;
 
 namespace Services.Services
 {
@@ -16,7 +15,6 @@ namespace Services.Services
         public ChatServices()
         {
             chatRepository = new ChatRepository();
-
         }
 
         public async Task<UserResponse> GetMessages(Message messageFilter)

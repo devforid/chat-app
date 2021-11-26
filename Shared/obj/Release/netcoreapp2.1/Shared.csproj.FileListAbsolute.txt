@@ -6,3 +6,4 @@ G:\SELISE-TEST\chat-app\Shared\obj\Release\netcoreapp2.1\Shared.AssemblyInfoInpu
 G:\SELISE-TEST\chat-app\Shared\obj\Release\netcoreapp2.1\Shared.AssemblyInfo.cs
 G:\SELISE-TEST\chat-app\Shared\obj\Release\netcoreapp2.1\Shared.dll
 G:\SELISE-TEST\chat-app\Shared\obj\Release\netcoreapp2.1\Shared.pdb
+G:\SELISE-TEST\chat-app\Shared\obj\Release\netcoreapp2.1\Shared.csprojAssemblyReference.cache

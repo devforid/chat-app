@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Repository.Models;
 using Services.Interfaces;
 using Services.Services;
 using Shared.DTOs;
@@ -65,8 +64,6 @@ namespace Chat.Controllers
             var response = _userServices.LoginUser(user);
             return Ok(response);
         }
-
-
 
         //[HttpGet]
         [HttpPost("getloggedinusers")]

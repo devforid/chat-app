@@ -1,5 +1,4 @@
-﻿using Repository.Models;
-using Shared.DTOs;
+﻿using Shared.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,8 +7,9 @@ namespace Services.Interfaces
 {
     public interface IUsers
     {
-        UserResponse Get(string id);
+        UserResponse GetUserById(GetUser getUser);
         SignupResponse Insert(Users user);
-        SignupResponse Update(Users user);
+        SignupResponse Login(Users user);
+        UserResponse GetLoggedInUsers();
     }
 }

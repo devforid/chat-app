@@ -1,5 +1,4 @@
-﻿using Repository.Models;
-using Repository.Repositories;
+﻿using Repository.Repositories;
 using Shared.DTOs;
 using System;
 using System.Collections.Generic;
@@ -12,10 +11,10 @@ namespace Services.Services
 {
    public class UserServices
     {
-        UserSignuRipository _userSignuRipository;
+        UserRipository _userSignuRipository;
         public UserServices()
         {
-            _userSignuRipository = new UserSignuRipository();
+            _userSignuRipository = new UserRipository();
         }
 
         public async Task<dynamic> Get(string id)
@@ -110,6 +109,7 @@ namespace Services.Services
         public UserResponse LoginUser(Users userInfo)
         {
             var hashPassword = ComputeSha256Hash(userInfo.Password);
+            userInfo.Password = hashPassword;
             var user = _userSignuRipository.GetUser(userInfo);
             if (user != null)
             {

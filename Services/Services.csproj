@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Repository\Repository.csproj" />
-    <ProjectReference Include="..\Shared\Shared.csproj" />
+    <PackageReference Include="Repository.User" Version="1.0.4" />
+    <PackageReference Include="Shared-Dto" Version="1.0.4" />
   </ItemGroup>
 
 </Project>

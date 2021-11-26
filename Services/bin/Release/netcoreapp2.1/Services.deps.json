@@ -1,18 +1,79 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "dbb5eeda7541f9bcd1a6b971131a2f7d8b0b8ace"
+    "signature": "2fc7cd4b10f53163ca5866787ea851b2de32a572"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "Services/1.0.0": {
         "dependencies": {
-          "Repository.User": "1.0.1",
-          "Shared": "1.0.0"
+          "Repository.User": "1.0.4",
+          "Shared-Dto": "1.0.4"
         },
         "runtime": {
           "Services.dll": {}
+        }
+      },
+      "Amazon.Core/0.12.2": {
+        "dependencies": {
+          "Carbon.Json": "1.9.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Amazon.Core.dll": {
+            "assemblyVersion": "0.12.2.0",
+            "fileVersion": "0.12.2.0"
+          }
+        }
+      },
+      "Amazon.S3/0.12.8": {
+        "dependencies": {
+          "Amazon.Core": "0.12.2",
+          "Carbon.Storage": "1.17.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Amazon.S3.dll": {
+            "assemblyVersion": "0.12.8.0",
+            "fileVersion": "0.12.8.0"
+          }
+        }
+      },
+      "AWSSDK.Core/3.3.100.3": {
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.100.3"
+          }
+        }
+      },
+      "AWSSDK.S3/3.3.101.1": {
+        "dependencies": {
+          "AWSSDK.Core": "3.3.100.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.S3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.101.1"
+          }
+        }
+      },
+      "Carbon.Json/1.9.0": {
+        "dependencies": {
+          "System.Text.Encodings.Web": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Carbon.Json.dll": {
+            "assemblyVersion": "1.9.0.0",
+            "fileVersion": "1.9.0.0"
+          }
+        }
+      },
+      "Carbon.Storage/1.17.0": {
+        "runtime": {
+          "lib/netcoreapp2.1/Carbon.Storage.dll": {
+            "assemblyVersion": "1.17.0.0",
+            "fileVersion": "1.17.0.0"
+          }
         }
       },
       "DnsClient/1.2.0": {
@@ -23,6 +84,14 @@
           "lib/netstandard2.0/DnsClient.dll": {
             "assemblyVersion": "1.2.0.0",
             "fileVersion": "1.2.0.0"
+          }
+        }
+      },
+      "Json.Net/1.0.16": {
+        "runtime": {
+          "lib/netstandard2.0/Json.Net.dll": {
+            "assemblyVersion": "1.0.16.1",
+            "fileVersion": "1.0.16.1"
           }
         }
       },
@@ -95,6 +164,31 @@
           "lib/netstandard1.5/MongoDB.Driver.Core.dll": {
             "assemblyVersion": "2.8.0.0",
             "fileVersion": "2.8.0.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.1.22727"
+          }
+        }
+      },
+      "Repository.User/1.0.4": {
+        "dependencies": {
+          "AWSSDK.Core": "3.3.100.3",
+          "AWSSDK.S3": "3.3.101.1",
+          "Amazon.S3": "0.12.8",
+          "Json.Net": "1.0.16",
+          "MongoDB.Driver": "2.8.0",
+          "Newtonsoft.Json": "12.0.1",
+          "Shared-Dto": "1.0.4"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Repository.dll": {
+            "assemblyVersion": "1.0.4.0",
+            "fileVersion": "1.0.4.0"
           }
         }
       },
@@ -205,6 +299,14 @@
           "runtime/ubuntu.16.10-x64/native/_._": {
             "rid": "ubuntu.16.10-x64",
             "assetType": "native"
+          }
+        }
+      },
+      "Shared-Dto/1.0.4": {
+        "runtime": {
+          "lib/netcoreapp2.1/Shared.dll": {
+            "assemblyVersion": "1.0.4.0",
+            "fileVersion": "1.0.4.0"
           }
         }
       },
@@ -891,6 +993,14 @@
           "System.Text.Encoding": "4.3.0"
         }
       },
+      "System.Text.Encodings.Web/4.5.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        }
+      },
       "System.Threading/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0",
@@ -912,19 +1022,6 @@
           "System.Runtime": "4.3.0",
           "System.Runtime.Handles": "4.3.0"
         }
-      },
-      "Repository.User/1.0.1": {
-        "dependencies": {
-          "MongoDB.Driver": "2.8.0"
-        },
-        "runtime": {
-          "Repository.dll": {}
-        }
-      },
-      "Shared/1.0.0": {
-        "runtime": {
-          "Shared.dll": {}
-        }
       }
     }
   },
@@ -934,12 +1031,61 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Amazon.Core/0.12.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w78hy0fYci1niK/SKWh3NV5vfnxDQjr6vCdFVRALYwSznLZDAmjxvRuPjI2uL3sry7K0Ucd4NM4LEin6urAZJA==",
+      "path": "amazon.core/0.12.2",
+      "hashPath": "amazon.core.0.12.2.nupkg.sha512"
+    },
+    "Amazon.S3/0.12.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OogdMya0GdOR05JZMpZHCkIlL/fwCaPgNqrDfYPcHlBR5LqOyo+qdEv+hL/iNQ2NCzqYyX9vqcb1dfuGyNwCSQ==",
+      "path": "amazon.s3/0.12.8",
+      "hashPath": "amazon.s3.0.12.8.nupkg.sha512"
+    },
+    "AWSSDK.Core/3.3.100.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TttzG9oQVBLNPB4jp2JO5hXo2JZpj9kEvkJh7gqvLFi99qXSenLg61WVred9NDLs6yeXiRYe8/FhuUIh5wRAIw==",
+      "path": "awssdk.core/3.3.100.3",
+      "hashPath": "awssdk.core.3.3.100.3.nupkg.sha512"
+    },
+    "AWSSDK.S3/3.3.101.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vp2BRsc/alkx8t+55JQ/E6d12peFlXQ8yxYzbz4MNpuVk1sUO14dSeSfVf0cH7ZA7PXetW0RBNVeId+A9XpVYA==",
+      "path": "awssdk.s3/3.3.101.1",
+      "hashPath": "awssdk.s3.3.3.101.1.nupkg.sha512"
+    },
+    "Carbon.Json/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DUkE1HfPwDpXI+7KsemHHK+EhtS08llue3SQDkVZkzCmX8SJiMv1vpHi5p7HbjkDZfb28J+aPsNOlBRE016RYA==",
+      "path": "carbon.json/1.9.0",
+      "hashPath": "carbon.json.1.9.0.nupkg.sha512"
+    },
+    "Carbon.Storage/1.17.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LCfJIoCfLHPPp44VWlPTIVHaehTKeFFeUaG5eyvyxCOApsRPattOM/rV4hSdtu7aGLb3QEG/2fGZ46wUOVfGeQ==",
+      "path": "carbon.storage/1.17.0",
+      "hashPath": "carbon.storage.1.17.0.nupkg.sha512"
+    },
     "DnsClient/1.2.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-P34wUkeqU4FoQiOMV8OjpdeDZKs4d3r+VlHuKJ6eO5feiZgna3+9MF5orHRUn3DAv1g/HPE5hlkGucmxmsFfBw==",
       "path": "dnsclient/1.2.0",
       "hashPath": "dnsclient.1.2.0.nupkg.sha512"
+    },
+    "Json.Net/1.0.16": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kFEw3EjjO1LN429+ltBm+bPGbG91VsDVRX0wPnq2KsAOYlwVVyRQTuDz3vE+wlVKu5SOSAQLsUxS5svnrkbPTQ==",
+      "path": "json.net/1.0.16",
+      "hashPath": "json.net.1.0.16.nupkg.sha512"
     },
     "Microsoft.Win32.Primitives/4.3.0": {
       "type": "package",
@@ -975,6 +1121,20 @@
       "sha512": "sha512-i+jDZN7nOnTGeCWcPdqopUx8dqxEsL2zGRBLWXTji4w+95kH9hEAuXmyMF129YEbojZwZ0xJ0/KL8+5bO3fM3Q==",
       "path": "mongodb.driver.core/2.8.0",
       "hashPath": "mongodb.driver.core.2.8.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
+      "path": "newtonsoft.json/12.0.1",
+      "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
+    },
+    "Repository.User/1.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Cy+dORA9KzA6TcwysbPZIUlrFWzimjSoDk2Q63p7a7oU/wT2MpjMnRt2sa4qNQtL+rPjFDmCYyj51toDuidOQA==",
+      "path": "repository.user/1.0.4",
+      "hashPath": "repository.user.1.0.4.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "type": "package",
@@ -1087,6 +1247,13 @@
       "sha512": "sha512-leXiwfiIkW7Gmn7cgnNcdtNAU70SjmKW3jxGj1iKHOvdn0zRWsgv/l2OJUO5zdGdiv2VRFnAsxxhDgMzofPdWg==",
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
+    },
+    "Shared-Dto/1.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Gw5XeMA3ygkh1BvuS0rppA480kgDpj2EPgnpbrAw+CkNRD4ssYX/zLfotbwCvxa9K6jKeNBDckVDjak01DMp5g==",
+      "path": "shared-dto/1.0.4",
+      "hashPath": "shared-dto.1.0.4.nupkg.sha512"
     },
     "System.Buffers/4.4.0": {
       "type": "package",
@@ -1459,6 +1626,13 @@
       "path": "system.text.encoding.extensions/4.0.11",
       "hashPath": "system.text.encoding.extensions.4.0.11.nupkg.sha512"
     },
+    "System.Text.Encodings.Web/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JF+wDdfFiRl3rz3dPMfR6aR568AW2J5CUMmhSflgHDz4zbVK4/00ax8UHnHyEMvblPewgNugjuA4oyoL8Pex2g==",
+      "path": "system.text.encodings.web/4.5.0",
+      "hashPath": "system.text.encodings.web.4.5.0.nupkg.sha512"
+    },
     "System.Threading/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1486,16 +1660,6 @@
       "sha512": "sha512-k/+g4b7vjdd4aix83sTgC9VG6oXYKAktSfNIJUNGxPEj7ryEOfzHHhfnmsZvjxawwcD9HyWXKCXmPjX8U4zeSw==",
       "path": "system.threading.threadpool/4.3.0",
       "hashPath": "system.threading.threadpool.4.3.0.nupkg.sha512"
-    },
-    "Repository.User/1.0.1": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Shared/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }

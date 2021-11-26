@@ -565,6 +565,15 @@
           }
         }
       },
+      "Shared-Dto/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.1/Shared.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Shared.dll": {}
+        }
+      },
       "System.Buffers/4.4.0": {
         "type": "package",
         "compile": {
@@ -1638,16 +1647,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Threading.ThreadPool.dll": {}
         }
-      },
-      "Shared/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
-        "compile": {
-          "bin/placeholder/Shared.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Shared.dll": {}
-        }
       }
     }
   },
@@ -2662,6 +2661,18 @@
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
+      ]
+    },
+    "Shared-Dto/1.0.1": {
+      "sha512": "BXyy83MJWX5hes7x7U7rCJTCnyvK6Qd1Dm9BFyFRjU4ud5fKTCaGple8hAr6RxsSXluS0KJoIpnkypv0/G3SwA==",
+      "type": "package",
+      "path": "shared-dto/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp2.1/Shared.dll",
+        "shared-dto.1.0.1.nupkg.sha512",
+        "shared-dto.nuspec"
       ]
     },
     "System.Buffers/4.4.0": {
@@ -5691,11 +5702,6 @@
         "system.threading.threadpool.4.3.0.nupkg.sha512",
         "system.threading.threadpool.nuspec"
       ]
-    },
-    "Shared/1.0.0": {
-      "type": "project",
-      "path": "../Shared/Shared.csproj",
-      "msbuildProject": "../Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5707,7 +5713,7 @@
       "Microsoft.NETCore.App >= 2.1.0",
       "MongoDB.Driver >= 2.8.0",
       "Newtonsoft.Json >= 12.0.1",
-      "Shared >= 1.0.0"
+      "Shared-Dto >= 1.0.1"
     ]
   },
   "packageFolders": {
@@ -5717,11 +5723,11 @@
   "project": {
     "version": "1.0.1",
     "restore": {
-      "projectUniqueName": "G:\\SELISE-TEST\\chat-app\\Repository\\Repository.csproj",
+      "projectUniqueName": "G:\\SELISE-TEST-PACKAGE\\chat-app\\Repository\\Repository.csproj",
       "projectName": "Repository.User",
-      "projectPath": "G:\\SELISE-TEST\\chat-app\\Repository\\Repository.csproj",
+      "projectPath": "G:\\SELISE-TEST-PACKAGE\\chat-app\\Repository\\Repository.csproj",
       "packagesPath": "C:\\Users\\Foridul Islam\\.nuget\\packages\\",
-      "outputPath": "G:\\SELISE-TEST\\chat-app\\Repository\\obj\\",
+      "outputPath": "G:\\SELISE-TEST-PACKAGE\\chat-app\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5740,11 +5746,7 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {
-            "G:\\SELISE-TEST\\chat-app\\Shared\\Shared.csproj": {
-              "projectPath": "G:\\SELISE-TEST\\chat-app\\Shared\\Shared.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -5785,6 +5787,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[12.0.1, )"
+          },
+          "Shared-Dto": {
+            "target": "Package",
+            "version": "[1.0.1, )"
           }
         },
         "imports": [

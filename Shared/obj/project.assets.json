@@ -692,13 +692,13 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "restore": {
-      "projectUniqueName": "G:\\SELISE-TEST\\chat-app\\Shared\\Shared.csproj",
-      "projectName": "Shared",
-      "projectPath": "G:\\SELISE-TEST\\chat-app\\Shared\\Shared.csproj",
+      "projectUniqueName": "G:\\SELISE-TEST-PACKAGE\\chat-app\\Shared\\Shared.csproj",
+      "projectName": "Shared-Dto",
+      "projectPath": "G:\\SELISE-TEST-PACKAGE\\chat-app\\Shared\\Shared.csproj",
       "packagesPath": "C:\\Users\\Foridul Islam\\.nuget\\packages\\",
-      "outputPath": "G:\\SELISE-TEST\\chat-app\\Shared\\obj\\",
+      "outputPath": "G:\\SELISE-TEST-PACKAGE\\chat-app\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

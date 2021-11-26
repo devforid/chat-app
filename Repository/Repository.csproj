@@ -6,6 +6,7 @@
     <Authors>forid.cse@gmail.com</Authors>
     <PackageTags>User</PackageTags>
     <Version>1.0.1</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,10 +16,7 @@
     <PackageReference Include="Json.Net" Version="1.0.16" />
     <PackageReference Include="MongoDB.Driver" Version="2.8.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Shared\Shared.csproj" />
+    <PackageReference Include="Shared-Dto" Version="1.0.1" />
   </ItemGroup>
 
 </Project>

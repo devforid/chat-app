@@ -7,3 +7,15 @@ G:\SELISE-TEST\chat-app\Repository\obj\Release\netcoreapp2.1\Repository.Assembly
 G:\SELISE-TEST\chat-app\Repository\obj\Release\netcoreapp2.1\Repository.dll
 G:\SELISE-TEST\chat-app\Repository\obj\Release\netcoreapp2.1\Repository.pdb
 G:\SELISE-TEST\chat-app\Repository\obj\Release\netcoreapp2.1\Repository.csprojAssemblyReference.cache
+G:\SELISE-TEST\chat-app\Repository\bin\Release\netcoreapp2.1\Shared.dll
+G:\SELISE-TEST\chat-app\Repository\bin\Release\netcoreapp2.1\Shared.pdb
+G:\SELISE-TEST\chat-app\Repository\obj\Release\netcoreapp2.1\Repository.csproj.CopyComplete
+G:\SELISE-TEST-PACKAGE\chat-app\Repository\bin\Release\netcoreapp2.1\Repository.deps.json
+G:\SELISE-TEST-PACKAGE\chat-app\Repository\bin\Release\netcoreapp2.1\Repository.dll
+G:\SELISE-TEST-PACKAGE\chat-app\Repository\bin\Release\netcoreapp2.1\Repository.pdb
+G:\SELISE-TEST-PACKAGE\chat-app\Repository\obj\Release\netcoreapp2.1\Repository.csproj.CoreCompileInputs.cache
+G:\SELISE-TEST-PACKAGE\chat-app\Repository\obj\Release\netcoreapp2.1\Repository.AssemblyInfoInputs.cache
+G:\SELISE-TEST-PACKAGE\chat-app\Repository\obj\Release\netcoreapp2.1\Repository.AssemblyInfo.cs
+G:\SELISE-TEST-PACKAGE\chat-app\Repository\obj\Release\netcoreapp2.1\Repository.dll
+G:\SELISE-TEST-PACKAGE\chat-app\Repository\obj\Release\netcoreapp2.1\Repository.pdb
+G:\SELISE-TEST-PACKAGE\chat-app\Repository\obj\Release\netcoreapp2.1\Repository.csprojAssemblyReference.cache
